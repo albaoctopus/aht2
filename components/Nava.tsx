@@ -67,10 +67,10 @@ const Nava = () => {
           >
            
             <Dropdown.Item>
-            <a href="/heavy"> АЛИХАН ВАХАЕВ</a>
+            <Link href="/heavy"> АЛИХАН ВАХАЕВ</Link>
             </Dropdown.Item>
             <Dropdown.Item>
-            <a href="/lheavy">МУСЛИМ МАГОМЕДОВ </a>
+            <Link href="/lheavy">МУСЛИМ МАГОМЕДОВ </Link>
             </Dropdown.Item>
             <Dropdown.Item>
             <a href="/middle">МАГОМЕДГАСУЛ ГАСАНОВ</a>
