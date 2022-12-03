@@ -51,7 +51,7 @@ const Nava = () => {
             </span>
           </Navbar.Link>
           <Navbar.Link 
-          href="/">
+          href="/marketplace">
              <span className="text-xl font-bold text-white hover:text-red-600">
             МАРКЕТПЛЕЙС
             </span>
@@ -73,7 +73,7 @@ const Nava = () => {
             <Link href="/lheavy">МУСЛИМ МАГОМЕДОВ </Link>
             </Dropdown.Item>
             <Dropdown.Item>
-            <a href="/middle">МАГОМЕДГАСУЛ ГАСАНОВ</a>
+            <a href="/middle">МАГОМЕДРАСУЛ ГАСАНОВ</a>
             </Dropdown.Item>
             <Dropdown.Item>
             <a href="/welter">АБУБАКАР ВАГАЕВ</a>
@@ -82,7 +82,7 @@ const Nava = () => {
             <a href="/light">АБДУЛ-АЗИЗ АБДУЛВАХАБОВ</a>
             </Dropdown.Item>
             <Dropdown.Item>
-            <a href="/feather">МАГОМЕДРАСУЛ ХАСБУЛАЕВ</a>
+            <a href="/feather">АЛИХАН СУЛЕЙМАНОВ</a>
             </Dropdown.Item>
             <Dropdown.Item>
             <a href="/bantam">ОЛЕГ БОРИСОВ</a>

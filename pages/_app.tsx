@@ -4,7 +4,7 @@ import "../styles/globals.css";
 import Layout from "../components/Layout";
 
 // This is the chainId your dApp will work on.
-const activeChainId = ChainId.Mainnet;
+const activeChainId = ChainId.Mumbai;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

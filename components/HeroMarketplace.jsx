@@ -1,19 +1,17 @@
 import React from "react";
 import PropTypes from  "prop-types";
-import MarketHeavy from "./MarketHeavy";
+import MarketMarketplace from "./MarketMarketplace";
 import Profile from "./Profile";
 
-function HeroHeavy(props) {
+function HeroMarketplace(props) {
   return (
     
     <section className="text-gray-200 bg-black-100 body-font">
         <div class="mt-10 text-center text-7xl font-extrabold ...">
   <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
-    Чемпион в тяжелом весе
+   МАРКЕТПЛЕЙС NFT
   </span> <br className="hidden lg:inline-block" />
-  <span class="text-gray-200">
-    АЛИХАН ВАХАЕВ
-  </span>
+  
 </div>
       <div className="container  mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:w-1/2 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -38,15 +36,17 @@ function HeroHeavy(props) {
         </div>
    
       </div>
-      <div class="mt-10 text-center text-7xl font-extrabold ...">
-  <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
-    NFT ЧЕМПИОНА
-  </span> <br className="hidden lg:inline-block" />
- 
+      <div className="mt-10 text-center text-7xl font-extrabold">
+<h1 className="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">ACA FIGHT</h1>
+<p className="mb-6 mt-9 text-xl font-bold text-white-500 lg:text-3xl sm:px-16 xl:px-48 dark:text-gray-400">Стань ближе к своему кумиру
+Мы Блокчейн платформа взаимодействия фанатов и бойцов.
+Новые технологии дают новые возможности. И теперь у Тебя есть возможность быть ближе к Кумиру. И влиять на развитие лиги.
+Сделаем Лучшую лигу в Мире Вместе.</p>
+
 </div>
 
 <div>
-  <MarketHeavy/>
+  <MarketMarketplace/>
   
 </div>
     </section>
@@ -55,4 +55,4 @@ function HeroHeavy(props) {
 
 
 
-export default HeroHeavy;
+export default HeroMarketplace;

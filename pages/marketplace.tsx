@@ -3,17 +3,16 @@ import { ConnectWallet } from "@thirdweb-dev/react";
 
 import type { NextPage } from "next";
 
-import HeroLheavy from "../components/HeroLheavy";
-import  Profile  from "../components/Profile";
+import HeroMarketplace from "../components/HeroMarketplace";
+import Marketplac from "../components/Marketplac";
 
-
-const Lheavy: NextPage = () => {
+const Marketplace: NextPage = () => {
   return (
     <div>
       <main>
         <div>
       
-        <HeroLheavy/>
+        <HeroMarketplace/>
         
         </div>
 
@@ -25,4 +24,4 @@ const Lheavy: NextPage = () => {
   );
 };
 
-export default Lheavy
+export default Marketplace

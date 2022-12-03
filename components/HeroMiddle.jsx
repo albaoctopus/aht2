@@ -3,7 +3,7 @@ import PropTypes from  "prop-types";
 import MarketHeavy from "./MarketHeavy";
 import Profile from "./Profile";
 
-function HeroHeavy(props) {
+function HeroMiddle(props) {
   return (
     
     <section className="text-gray-200 bg-black-100 body-font">
@@ -12,7 +12,7 @@ function HeroHeavy(props) {
     Чемпион в тяжелом весе
   </span> <br className="hidden lg:inline-block" />
   <span class="text-gray-200">
-    АЛИХАН ВАХАЕВ
+  МАГОМЕДРАСУЛ ГАСАНОВ
   </span>
 </div>
       <div className="container  mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -55,4 +55,4 @@ function HeroHeavy(props) {
 
 
 
-export default HeroHeavy;
+export default HeroMiddle;

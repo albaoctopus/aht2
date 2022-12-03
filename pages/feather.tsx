@@ -3,17 +3,18 @@ import { ConnectWallet } from "@thirdweb-dev/react";
 
 import type { NextPage } from "next";
 
-import HeroLheavy from "../components/HeroLheavy";
-import  Profile  from "../components/Profile";
+import HeroFeather from "../components/HeroFeather";
+import MarketHeavy from "../components/MarketHeavy";
 
 
-const Lheavy: NextPage = () => {
+const Feather: NextPage = () => {
   return (
     <div>
       <main>
         <div>
       
-        <HeroLheavy/>
+        <HeroFeather/>
+        
         
         </div>
 
@@ -25,4 +26,4 @@ const Lheavy: NextPage = () => {
   );
 };
 
-export default Lheavy
+export default Feather

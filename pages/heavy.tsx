@@ -4,6 +4,7 @@ import { ConnectWallet } from "@thirdweb-dev/react";
 import type { NextPage } from "next";
 
 import HeroHeavy from "../components/HeroHeavy";
+import MarketHeavy from "../components/MarketHeavy";
 
 
 const Heavy: NextPage = () => {
@@ -13,6 +14,7 @@ const Heavy: NextPage = () => {
         <div>
       
         <HeroHeavy/>
+        
         
         </div>
 
