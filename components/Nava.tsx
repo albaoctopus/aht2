@@ -73,22 +73,22 @@ const Nava = () => {
             <Link href="/lheavy">МУСЛИМ МАГОМЕДОВ </Link>
             </Dropdown.Item>
             <Dropdown.Item>
-            <a href="/middle">МАГОМЕДРАСУЛ ГАСАНОВ</a>
+            <Link href="/middle">МАГОМЕДРАСУЛ ГАСАНОВ</Link>
             </Dropdown.Item>
             <Dropdown.Item>
-            <a href="/welter">АБУБАКАР ВАГАЕВ</a>
+            <Link href="/welter">АБУБАКАР ВАГАЕВ</Link>
             </Dropdown.Item>
             <Dropdown.Item>
-            <a href="/light">АБДУЛ-АЗИЗ АБДУЛВАХАБОВ</a>
+            <Link href="/light">АБДУЛ-АЗИЗ АБДУЛВАХАБОВ</Link>
             </Dropdown.Item>
             <Dropdown.Item>
-            <a href="/feather">АЛИХАН СУЛЕЙМАНОВ</a>
+            <Link href="/feather">АЛИХАН СУЛЕЙМАНОВ</Link>
             </Dropdown.Item>
             <Dropdown.Item>
-            <a href="/bantam">ОЛЕГ БОРИСОВ</a>
+            <Link href="/bantam">ОЛЕГ БОРИСОВ</Link>
             </Dropdown.Item>
             <Dropdown.Item>
-            <a href="/fly">ИМРАН БУКУЕВ</a>
+            <Link href="/fly">ИМРАН БУКУЕВ</Link>
             </Dropdown.Item>
            
           </Dropdown>
