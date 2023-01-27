@@ -8,76 +8,66 @@ import {
 } from "@thirdweb-dev/react";
 import { useRouter } from "next/router";
 import { Marketplace } from "@thirdweb-dev/sdk";
+import { BigNumber } from "ethers";
+
 
 const MpAvaLight: NextPage = () => {
   const router = useRouter();
 
 
   // Connect your marketplace smart contract here (replace this address)
-  const { contract: marketplace } = useContract(
-    "0x5C5800A0E4035f11eb69719e59C0E1e75d2111a8", // Your marketplace contract address here
+  const { contract } = useContract(
+    "0x35D49894301C6451b86695b852EB28f8f2693e04", // Your marketplace contract address here
     "marketplace"
   );
 
-  const { data: listings, isLoading: loadingListings } =
-    useActiveListings(marketplace);
+  const { data: nfts, isLoading} =
+  useActiveListings(contract);
 
-  return (
-    <>
-      {/* Content */}
-      <div className={styles.container}>
-        
+return (
+<div >
+<main className={styles.container}>
+    
+    {!isLoading ? (
+        <div className={styles.listingGrid}>
+            {nfts && nfts.map ((nft) => {
+                return (
+                    <div className={styles.listingShortView}>
+                        <MediaRenderer className={styles.ybart}
+                            src={nft.asset.image}
+                            style={{
+                                borderRadius: 18,
+                            height:"350px",
+                            width:"350px",
 
-        <div className="main">
-          {
-            // If the listings are loading, show a loading message
-            loadingListings ? (
-              <div>Loading listings...</div>
-            ) : (
-              // Otherwise, show the listings
-              <div className={styles.listingGrid}>
-                {listings?.map((listing) => (
-                  <div
-                    key={listing.id}
-                    className={styles.listingShortView}
-                    onClick={() => router.push(`/listing/${listing.id}`)}
-                  >
-                    <MediaRenderer className={styles.ybart}
-                      src={listing.asset.image}
-                      style={{
-                        borderRadius: 18,
-                        // Fit the image to the container
-                        width: "100%",
-                        height: "100%",
-                        
-                      }}
-                    />
-                    <h2>
-                      <Link href={`/listing/${listing.id}`}>
-                        <a className={styles.nftName}>{listing.asset.name}</a>
-                      </Link>
-                    </h2>
-
-                    <p className={styles.nftPrice}>
-                      <b>{"PRICE "}{listing.buyoutCurrencyValuePerToken.displayValue  }{" ETH  "}</b>
-                      
-                    </p>
-                    <div>
-                    <Link href="/create">
-                    <a className={styles.nftButton} >
-                     BUY NFT
-                     </a>
-                    </Link>
-                  </div>
-                  </div>
-                ))}
-              </div>
-            )
-          }
+                            }}
+                            
+                            />
+                            <p className={styles.nftName}>{nft.asset.name}</p>
+                            <p className={styles.nftPrice}>Price: {nft.buyoutCurrencyValuePerToken.displayValue} MATIC</p>
+                            <button
+                                onClick={async () => {
+                                    try {
+                                        await contract?.buyoutListing(BigNumber.from(nft.id),1);
+                                    } catch (error) {
+                                        console.error(error);
+                                        alert(error)
+                                    }
+                                }}
+                             >   
+                               <p className={styles.nftName}>Buy Now </p>
+                            </button>
+                            </div>
+                );
+            
+            })}
         </div>
-      </div>
-    </>
-  );
-};
+            ) : (
+                <div>Loading...</div>
+            )}
+</main>
+</div>
+);
+  };
 
-export default MpAvaLight;
+  export default MpAvaLight;

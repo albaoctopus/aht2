@@ -23,7 +23,7 @@ function HeroRtwo(props) {
           </div>
         </div>
         <div className="basis-1/2  lg:grow lg:w-full md:w-1/2 w-5/6">
-          <video className="object-cover object-center rounded-3xl" alt="hero" src="/videoB.mp4" autoPlay loop muted />
+          <video className="object-cover object-center rounded-3xl" alt="hero" src="/Suleymanov.mp4" autoPlay loop muted />
         </div>
       </div>
     </section>

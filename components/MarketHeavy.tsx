@@ -1,6 +1,7 @@
 
 import { Table } from "flowbite-react";
 import { Tabs } from "flowbite-react";
+import Vakhaev from "../pages/vakhaev";
 import Marketplac from "./Marketplac";
 import MpAvaHeavy from "./MpAvaHeavy";
 import MpMomHeavy from "./MpMomHeavy";
@@ -31,8 +32,18 @@ const MarketHeavy = () => {
 Новые технологии дают новые возможности. И теперь у Тебя есть возможность быть ближе к Кумиру. И влиять на развитие лиги.
 Сделаем Лучшую лигу в Мире Вместе.</p>
 
-</div>
-    <MpMomHeavy/>
+</div >
+
+    <div className="container mx-auto pt-10 justify-center flex flex-row flex-wrap">
+    <Vakhaev/>
+    <Vakhaev/>
+    <Vakhaev/>
+    <Vakhaev/>
+    <Vakhaev/>
+    <Vakhaev/>
+    <Vakhaev/>
+    <Vakhaev/>
+    </div>
   </Tabs.Item>
   <Tabs.Item title={<span className=" text-gray-500 text-xl font-bold ">
     АВАТАРЫ

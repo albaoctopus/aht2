@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from  "prop-types";
 import MarketHeavy from "./MarketHeavy";
 import Profile from "./Profile";
+import MarketFeather from "./MarketFeather";
 
 function Feather(props) {
   return (
@@ -9,7 +10,7 @@ function Feather(props) {
     <section className="text-gray-200 bg-black-100 body-font">
         <div className="mt-10 text-center text-7xl font-extrabold ...">
   <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
-    Чемпион в тяжелом весе
+    Чемпион в полулегком весе
   </span> <br className="hidden lg:inline-block" />
   <span className="text-gray-200">
   АЛИХАН СУЛЕЙМАНОВ
@@ -34,7 +35,7 @@ function Feather(props) {
           </div>
         </div>
         <div className="basis-1/2  lg:grow lg:w-full md:w-1/2 w-5/6">
-          <video className="object-cover object-center rounded-3xl" alt="hero" src="/videoB.mp4" autoPlay loop muted />
+          <video className="object-cover object-center rounded-3xl" alt="hero" src="/Suleymanov.mp4" autoPlay loop muted />
         </div>
    
       </div>
@@ -46,7 +47,7 @@ function Feather(props) {
 </div>
 
 <div>
-  <MarketHeavy/>
+  <MarketFeather/>
   
 </div>
     </section>

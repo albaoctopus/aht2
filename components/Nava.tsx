@@ -28,7 +28,7 @@ const Nava = () => {
             FIGHT
           </span>
         </Navbar.Brand>
-        <div className="flex md:order-2">
+        <div className="flex xl:order-2">
         <a>
           <ConnectWallet/>
           </a>
@@ -44,12 +44,7 @@ const Nava = () => {
             HOME
             </span>
           </Navbar.Link>
-          <Navbar.Link 
-           href="/">
-            <span className="text-xl font-bold text-white hover:text-red-600">
-            ЗОЛОТОЙ КЛУБ
-            </span>
-          </Navbar.Link>
+          
           <Navbar.Link 
           href="/marketplace">
              <span className="text-xl font-bold text-white hover:text-red-600">

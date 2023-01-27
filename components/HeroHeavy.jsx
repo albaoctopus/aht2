@@ -7,11 +7,11 @@ function HeroHeavy(props) {
   return (
     
     <section className="text-gray-200 bg-black-100 body-font">
-        <div class="mt-10 text-center text-7xl font-extrabold ...">
-  <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
+        <div className="mt-10 text-center text-7xl font-extrabold ...">
+  <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
     Чемпион в тяжелом весе
   </span> <br className="hidden lg:inline-block" />
-  <span class="text-gray-200">
+  <span className="text-gray-200">
     АЛИХАН ВАХАЕВ
   </span>
 </div>
@@ -38,8 +38,8 @@ function HeroHeavy(props) {
         </div>
    
       </div>
-      <div class="mt-10 text-center text-7xl font-extrabold ...">
-  <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
+      <div className="mt-10 text-center text-7xl font-extrabold ...">
+  <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
     NFT ЧЕМПИОНА
   </span> <br className="hidden lg:inline-block" />
  

@@ -15,7 +15,7 @@ const MpMomHeavy: NextPage = () => {
 
   // Connect your marketplace smart contract here (replace this address)
   const { contract: marketplace } = useContract(
-    "0xA800c27d2C39d77398447074Aa1A968E9d812b2C", // Your marketplace contract address here
+    "0x8C16eBD1045A2D0944A1706bc28789d18c5C405b", // Your marketplace contract address here
     "marketplace"
   );
 
@@ -35,7 +35,7 @@ const MpMomHeavy: NextPage = () => {
               <div>Loading listings...</div>
             ) : (
               // Otherwise, show the listings
-              <div className={styles.listingGrid}>
+              <div className="flex flex-row items-center justify-center flex-wrap gap-3">
                 {listings?.map((listing) => (
                   <div
                     key={listing.id}

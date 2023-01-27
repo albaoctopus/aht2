@@ -25,7 +25,7 @@ const MpRelWelter: NextPage = () => {
   return (
     <>
       {/* Content */}
-      <div className={styles.container}>
+      <div className="md:shrink-0">
         
 
         <div className="main">

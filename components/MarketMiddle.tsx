@@ -1,8 +1,10 @@
 
 import { Table } from "flowbite-react";
 import { Tabs } from "flowbite-react";
+import Gasanov from "../pages/gasanov";
 import Marketplac from "./Marketplac";
 import MpAvaHeavy from "./MpAvaHeavy";
+import MpAvaMiddle from "./MpAvaMiddle";
 import MpMomHeavy from "./MpMomHeavy";
 import MpRelHeavy from "./MpRelHeavy";
 import Profile from "./Profile";
@@ -32,7 +34,20 @@ const MarketMiddle = () => {
 Сделаем Лучшую лигу в Мире Вместе.</p>
 
 </div>
-    <MpMomHeavy/>
+    
+<div className="container mx-auto pt-10 justify-center flex flex-row flex-wrap">
+    <Gasanov/>
+    <Gasanov/>
+    <Gasanov/>
+    <Gasanov/>
+    <Gasanov/>
+    <Gasanov/>
+    <Gasanov/>
+    <Gasanov/>
+    </div>
+
+
+
   </Tabs.Item>
   <Tabs.Item title={<span className=" text-gray-500 text-xl font-bold ">
     АВАТАРЫ
@@ -45,7 +60,7 @@ const MarketMiddle = () => {
 Сделаем Лучшую лигу в Мире Вместе.</p>
 
 </div>
-    <MpAvaHeavy/>
+    <MpAvaMiddle/>
   </Tabs.Item>
   <Tabs.Item title={<span className=" text-gray-500 text-xl font-bold ">
     ВЗАИМОДЕЙСТВИЯ

@@ -2,16 +2,17 @@ import React from "react";
 import PropTypes from  "prop-types";
 import MarketHeavy from "./MarketHeavy";
 import Profile from "./Profile";
+import MarketFly from "./MarketFly";
 
 function HeroFly(props) {
   return (
     
     <section className="text-gray-200 bg-black-100 body-font">
-        <div class="mt-10 text-center text-7xl font-extrabold ...">
-  <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
-    Чемпион в тяжелом весе
+        <div className="mt-10 text-center text-7xl font-extrabold ...">
+  <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
+    Чемпион в наилегчайшем весе
   </span> <br className="hidden lg:inline-block" />
-  <span class="text-gray-200">
+  <span className="text-gray-200">
   ИМРАН БУКУЕВ
   </span>
 </div>
@@ -34,19 +35,19 @@ function HeroFly(props) {
           </div>
         </div>
         <div className="basis-1/2  lg:grow lg:w-full md:w-1/2 w-5/6">
-          <video className="object-cover object-center rounded-3xl" alt="hero" src="/videoB.mp4" autoPlay loop muted />
+          <video className="object-cover object-center rounded-3xl" alt="hero" src="/Bukuev.mp4" autoPlay loop muted />
         </div>
    
       </div>
-      <div class="mt-10 text-center text-7xl font-extrabold ...">
-  <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
+      <div className="mt-10 text-center text-7xl font-extrabold ...">
+  <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
     NFT ЧЕМПИОНА
   </span> <br className="hidden lg:inline-block" />
  
 </div>
 
 <div>
-  <MarketHeavy/>
+  <MarketFly/>
   
 </div>
     </section>
