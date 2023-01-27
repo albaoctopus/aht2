@@ -32,7 +32,7 @@ return (
         <div className={styles.listingGrid}>
             {nfts && nfts.map ((nft) => {
                 return (
-                    <div className={styles.listingShortView}>
+                    <div key={nft.id} className={styles.listingShortView}>
                         <MediaRenderer className={styles.ybart}
                             src={nft.asset.image}
                             style={{

@@ -32,7 +32,7 @@ return (
         <div>
             {nfts && nfts.map ((nft) => {
                 return (
-                    <div>
+                    <div key={nft.id} className={styles.listingShortView}>
                         <MediaRenderer
                             src={nft.asset.image}
                             height="200px"
