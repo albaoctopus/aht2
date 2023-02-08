@@ -8,7 +8,7 @@ const Foote = () => (
   
 >
   
-  <a className="pl-2 self-center text-3xl font-bold whitespace-nowrap text-white">
+  <a className="pl-2 self-center text-lg font-bold whitespace-nowrap text-white sm:text-3xl">
   created and powered by  rage machine
   </a>
 </div>

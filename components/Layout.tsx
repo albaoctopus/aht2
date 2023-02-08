@@ -3,8 +3,10 @@ import Foote from './Foote';
 import Footer from './Foote';
 import Footone from './Footone';
 import Nava from './Nava';
+import { Navbars } from './Navbars';
+import Navgpt from './Navgpt';
 
-import Navbar from './Navbar';
+
 
 
 interface LayoutProps {
@@ -15,9 +17,10 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      <Nava />
+       <Navgpt/>
+       
       <main>{children}</main>
-      <Footone/>
+     
       <Foote/>
       
     </>

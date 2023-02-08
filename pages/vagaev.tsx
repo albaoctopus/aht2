@@ -9,7 +9,6 @@ import {
   import { formatUnits, parseUnits } from "ethers/lib/utils";
   import type { NextPage } from "next";
   import { useState } from "react";
-  import styles from "../styles/Mint.module.css";
   
   // Put Your NFT Drop Contract address from the dashboard here
   const myNftDropContractAddress = "0xcC76e45F2340B503ef77a767e0A9DA9020C3A48E";
@@ -49,105 +48,79 @@ import {
   
     // Loading state while we fetch the metadata
     if (!nftDrop || !contractMetadata) {
-      return <div className={styles.container}>Loading...</div>;
+      return <div className="bg-green-700 p-4 border-4 border-sky-500">Loading...</div>;
     }
-  
+    
     return (
-      <div className={styles.container}>
-        <div className={styles.mintInfoContainer}>
-        
-  
-          <div className={styles.imageSide}>
-            {/* Image Preview of NFTs */}
-           
-            <video className="py-3 object-cover object-center rounded-3xl"  src="/Vagaev.mp4" autoPlay loop muted controls />
-
-            <div className={styles.mainButton}>
-              <p>VAGAEV</p>
+      <div className="container mx-auto pt-10 justify-center flex flex-row flex-wrap bg-green-700 p-4 border-4 border-sky-500">
+        <div className="flex border-4 border-red-500">
+          <div className=" h-[300px] w-[300px] border-4 border-yellow-200">
+            <video className=" object-cover object-center rounded-3xl border-4 border-yellow-500"  src="/Vakhaev.mp4" autoPlay loop muted controls />
+    
+            <div className="text-center py-2">
+              <p>VAKHAEV</p>
             </div>
-  
-            {/* Amount claimed so far */}
-            <div className={styles.mainButton}>
-              <div className={styles.mintAreaLeft}>
+    
+            <div className="flex py-2">
+              <div className="h-45 w-45">
                 <p>Total Minted </p>
-                {" "}
               </div>
-              <div className={styles.mintAreaRight}>
+              <div className="h-45 w-45">
                 {claimedSupply && unclaimedSupply ? (
                   <p>
-                    {/* Claimed supply so far */}
                     <b>{claimedSupply?.toNumber()}</b>
                     {" / "}
-                    {
-                      // Add unclaimed and claimed supply to get the total supply
-                      claimedSupply?.toNumber() + unclaimedSupply?.toNumber()
-                    }
+                    {claimedSupply?.toNumber() + unclaimedSupply?.toNumber()}
                   </p>
                 ) : (
-                  // Show loading state if we're still loading the supply
                   <p>Loading...</p>
                 )}
               </div>
             </div>
-  
-            {/* Show claim button or connect wallet button */}
-            {
-              // Sold out or show the claim button
-              isSoldOut ? (
-                <div>
-                  <h2>Sold Out</h2>
-                </div>
-              ) : isNotReady ? (
-                <div>
-                  <h2>Not ready to be minted yet</h2>
-                </div>
-              ) : (
-                <>
-                  
-  
-                  <div className={styles.mintContainer}>
-                    <Web3Button
-                      
-                      contractAddress={myNftDropContractAddress}
-                      action={async (contract) =>
-                        await contract.erc721.claim(quantity)
-                      }
-                      // If the function is successful, we can do something here.
-                      onSuccess={(result) =>
-                        alert(
-                          `Successfully minted ${result.length} NFT${
-                            result.length > 1 ? "s" : ""
-                          }!`
-                        )
-                      }
-                      // If the function fails, we can do something here.
-                      onError={(error) => alert(error?.message)}
-                      accentColor="#B9261C"
-                      colorMode="light"
-                      
-                    >
-                      {`Mint${quantity > 1 ? ` ${quantity}` : ""}${
-                        activeClaimCondition?.price.eq(0)
-                          ? " (Free)"
-                          : activeClaimCondition?.currencyMetadata.displayValue
-                          ? ` (${formatUnits(
-                              priceToMint,
-                              activeClaimCondition.currencyMetadata.decimals
-                            )} ${activeClaimCondition?.currencyMetadata.symbol})`
-                          : ""
-                      }`}
-                    </Web3Button>
-                  </div>
-                </>
-              )
-            }
+    
+            {isSoldOut ? (
+              <div className="text-center py-2">
+                <h2>Sold Out</h2>
+              </div>
+            ) : isNotReady ? (
+              <div className="text-center py-2">
+                <h2>Not ready to be minted yet</h2>
+              </div>
+            ) : (
+              <div className="text-center py-2">
+                <Web3Button
+                  className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
+                  contractAddress={myNftDropContractAddress}
+                  action={async (contract) =>
+                    await contract.erc721.claim(quantity)
+                  }
+                  onSuccess={(result) =>
+                    alert(
+                      `Successfully minted ${result.length} NFT${
+                        result.length > 1 ? "s" : ""
+                      }!`
+                    )
+                  }
+                  onError={(error) => alert(error?.message)}
+                >
+                  {`Mint${quantity > 1 ? ` ${quantity}` : ""}${
+                    activeClaimCondition?.price.eq(0)
+                      ? " (Free)"
+                      : activeClaimCondition?.currencyMetadata.displayValue
+                      ? ` (${formatUnits(
+                          priceToMint,
+                          activeClaimCondition.currencyMetadata.decimals
+                        )} ${activeClaimCondition?.currencyMetadata.symbol})`
+                      : ""
+                  }`}
+                </Web3Button>
+              </div>
+            )}
           </div>
         </div>
-        {/* Powered by thirdweb */}{" "}
-        
       </div>
-      
     );
+    
   };
   
   export default Vagaev;
