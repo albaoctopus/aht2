@@ -23,9 +23,11 @@ const Test: NextPage = () => {
         <div>
         
 
-
+        <Vport2/>
         <About/>
         <HeroRone/>
+        <HeroLone/>
+        <HeroRtwo/>
         <Tlineone/>
         
         

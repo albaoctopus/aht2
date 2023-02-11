@@ -14,7 +14,8 @@ const Nava = () => {
   const { pathname } = useRouter();
 
   return (
-      <Navbar className='bg-gray-900 mx-auto flex flex-wrap items-center justify-between p-4'
+      <Navbar className='bg-gray-900 mx-auto flex flex-wrap items-center justify-between p-4 '
+     
       style={{maxWidth: "1200px"}}
     >
       <Navbar.Brand href="https://www.aca-mma.com/">
@@ -23,28 +24,23 @@ const Nava = () => {
           className="mr-3 h-6 sm:h-9"
           alt="ACA Logo"
         />
-        <span className="self-center whitespace-nowrap text-xl font-bold text-white hover:text-red-600 lg:text-3xl">
+        <span className="self-center whitespace-nowrap text-xl font-bold text-white hover:text-red-600 md:text-2xl lg:text-3xl">
           FIGHT
         </span>
       </Navbar.Brand>
-      <div className="flex lg:order-2">
+      <div className="flex md:order-2">
       <a>
         <ConnectWallet/>
         </a>
         
-        <Navbar.Toggle />
+        <Navbar.Toggle/>
       </div>
-      <Navbar.Collapse className="hidden xl:block">
-        <Navbar.Link 
-          href="/"
-          className="text-lg font-bold text-white hover:text-red-600 mr-6 lg:text-xl"
-        >
-          HOME
-        </Navbar.Link>
+      <Navbar.Collapse className="hidden lg:block">
+      
         
         <Navbar.Link 
         href="/marketplace"
-        className="text-lg font-bold text-white hover:text-red-600 mr-6 lg:text-xl"
+        className="text-lg font-bold text-white hover:text-red-600 mr-1 lg:text-xl"
         >
            МАРКЕТПЛЕЙС
         </Navbar.Link>

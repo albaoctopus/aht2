@@ -30,7 +30,7 @@ export const Navbars = () => (
           type="button"
           className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="navbar-cta"
-          aria-expanded="false"
+          aria-expanded="true"
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -49,7 +49,7 @@ export const Navbars = () => (
         </button>
       </div>
       <div
-        className="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
+        className="items-center justify-between w-full md:flex lg:w-auto lg:order-1"
         id="navbar-cta"
       >
         <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-500 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-red-400 ">
