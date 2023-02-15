@@ -38,7 +38,7 @@ function HeroHeavy(props) {
         </div>
    
       </div>
-      <div className="mt-10 text-center text-7xl font-extrabold ...">
+      <div className="mt-10 text-center text-5xl font-extrabold md:text-7xl">
   <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
     NFT ЧЕМПИОНА
   </span> <br className="hidden lg:inline-block" />

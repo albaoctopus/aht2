@@ -21,7 +21,7 @@ const MarketHeavy = () => {
 >
   <Tabs.Item
     
-    title={<span className=" text-gray-500 text-xl font-bold ">
+    title={<span className=" text-gray-500 text-sm font-bold sm:text-xl ">
     МОМЕНТЫ
   </span>}
   className="bg-red-300 hover:bg-red-500"
@@ -46,7 +46,7 @@ const MarketHeavy = () => {
     <Vakhaev/>
     </div>
   </Tabs.Item>
-  <Tabs.Item title={<span className=" text-gray-500 text-xl font-bold ">
+  <Tabs.Item title={<span className=" text-gray-500 text-sm font-bold sm:text-xl">
     АВАТАРЫ
   </span>}>
   <div className="mt-10 text-center text-7xl font-extrabold">
@@ -59,7 +59,7 @@ const MarketHeavy = () => {
 </div>
     <Marketnew/>
   </Tabs.Item>
-  <Tabs.Item title={<span className=" text-gray-500 text-xl font-bold ">
+  <Tabs.Item title={<span className=" text-gray-500 text-sm font-bold sm:text-xl ">
     ВЗАИМОДЕЙСТВИЯ
   </span>}>
   <div className="mt-10 text-center text-7xl font-extrabold">
