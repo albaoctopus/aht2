@@ -54,11 +54,11 @@ import {
     return (
       <div className="container mx-auto pt-10 justify-center flex flex-row flex-wrap bg-green-700 p-4 border-4 border-sky-500">
         <div className="flex border-4 border-red-500">
-          <div className=" h-[300px] w-[300px] border-4 border-yellow-200">
+          <div className=" h-[100px] w-[100px] border-4 border-yellow-200">
             <video className=" object-cover object-center rounded-3xl border-4 border-yellow-500"  src="/Vakhaev.mp4" autoPlay loop muted controls />
     
             <div className="text-center py-2">
-              <p>VAKHAEV</p>
+              <p>VAGAEV</p>
             </div>
     
             <div className="flex py-2">

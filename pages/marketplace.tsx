@@ -9,17 +9,7 @@ import Marketplac from "../components/Marketplac";
 const Marketplace: NextPage = () => {
   return (
     <div>
-      <main>
-        <div>
-      
         <HeroMarketplace/>
-        
-        </div>
-
-         
-
-       
-      </main>
     </div>
   );
 };

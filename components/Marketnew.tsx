@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import styles from "../styles/Market.module.css";
+
 import Link from "next/link";
 import {
   MediaRenderer,
@@ -17,7 +17,7 @@ const Marketnew: NextPage = () => {
 
   // Connect your marketplace smart contract here (replace this address)
   const { contract } = useContract(
-    "0x8C16eBD1045A2D0944A1706bc28789d18c5C405b", // Your marketplace contract address here
+    "0x9D9b5029b02075025929797D54509552E7DC8E4e", // Your marketplace contract address here
     "marketplace"
   );
 
@@ -26,41 +26,52 @@ const Marketnew: NextPage = () => {
 
 return (
 <div>
-<main>
-    <h1>Market</h1>
+<main className="p-5 border-4 border-red-500">
+    
     {!isLoading ? (
-        <div>
-            {nfts && nfts.map ((nft) => {
+        <div className="border-4 border-red-500 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {nfts && nfts.map((nft) => {
                 return (
-                    <div key={nft.id} className={styles.listingShortView}>
+                    <div key={nft.id} className="bg-gray-900 rounded-lg overflow-hidden shadow-lg border-4 border-orange-500">
                         <MediaRenderer
                             src={nft.asset.image}
-                            height="200px"
-                            width="200px"
-                            />
-                            <p>{nft.asset.name}</p>
-                            <p>Price: {nft.buyoutCurrencyValuePerToken.displayValue} MATIC</p>
+                            height="300px"
+                            width="300px"
+                            className="w-full h-91 object-cover border-4 border-yellow-500"
+                        />
+                        <div className="p-5 flex-row border-4 border-blue-400 flex items-center justify-between">
+                            <span>
+                            <p className="text-lg font-medium">{nft.asset.name}</p>
+                            <p className="text-sm text-white">
+                                Price: {nft.buyoutCurrencyValuePerToken.displayValue} MATIC
+                            </p>
+                            </span>
                             <button
+                                className="place-self-endtext-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
                                 onClick={async () => {
                                     try {
-                                        await contract?.buyoutListing(BigNumber.from(nft.id),1);
+                                        await contract?.buyoutListing(
+                                            BigNumber.from(nft.id),
+                                            1
+                                        );
                                     } catch (error) {
                                         console.error(error);
-                                        alert(error)
+                                        alert(error);
                                     }
                                 }}
-                             >   
-                               Buy Now 
+                            >
+                                Buy Now
                             </button>
-                            </div>
+                        </div>
+                    </div>
                 );
-            
             })}
         </div>
-            ) : (
-                <div>Loading...</div>
-            )}
+    ) : (
+        <div className="text-center text-3xl">Loading...</div>
+    )}
 </main>
+
 </div>
 );
   };

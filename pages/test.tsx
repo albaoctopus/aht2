@@ -6,6 +6,7 @@ import About from "../components/About";
 import { Banner } from "../components/Banner";
 import Carous from "../components/Carousel";
 import HeroLone from "../components/HeroLone";
+import HeroMarketplace from "../components/HeroMarketplace";
 import HeroRone from "../components/HeroRone";
 import HeroRtwo from "../components/HeroRtwo";
 import Magazin from "../components/Magazin";
@@ -23,12 +24,7 @@ const Test: NextPage = () => {
         <div>
         
 
-        <Vport2/>
-        <About/>
-        <HeroRone/>
-        <HeroLone/>
-        <HeroRtwo/>
-        <Tlineone/>
+        <HeroMarketplace/>
         
         
         </div>

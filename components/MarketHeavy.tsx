@@ -2,6 +2,7 @@
 import { Table } from "flowbite-react";
 import { Tabs } from "flowbite-react";
 import Vakhaev from "../pages/vakhaev";
+import Marketnew from "./Marketnew";
 import Marketplac from "./Marketplac";
 import MpAvaHeavy from "./MpAvaHeavy";
 import MpMomHeavy from "./MpMomHeavy";
@@ -34,7 +35,7 @@ const MarketHeavy = () => {
 
 </div >
 
-    <div className="container mx-auto pt-10 justify-center flex flex-row flex-wrap">
+    <div className="bg-gray-900 border-4 border-red-500 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
     <Vakhaev/>
     <Vakhaev/>
     <Vakhaev/>
@@ -56,7 +57,7 @@ const MarketHeavy = () => {
 Сделаем Лучшую лигу в Мире Вместе.</p>
 
 </div>
-    <MpAvaHeavy/>
+    <Marketnew/>
   </Tabs.Item>
   <Tabs.Item title={<span className=" text-gray-500 text-xl font-bold ">
     ВЗАИМОДЕЙСТВИЯ
