@@ -25,7 +25,7 @@ const Navaflo = () => {
       className="mr-3 h-6 sm:h-9"
       alt="Flowbite Logo"
     />
-    <span className="self-center whitespace-nowrap text-3xl font-bold text-red-800">
+    <span className="self-center whitespace-nowrap text-base font-bold text-white hover:text-red-600 md:text-2xl lg:text-3xl">
       FIGHT
     </span>
   </Navbar.Brand>
