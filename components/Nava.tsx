@@ -9,6 +9,7 @@ import { Navbar } from "flowbite-react";
 import { Avatar } from "flowbite-react";
 import { Button } from "flowbite-react";
 import { NavbarLink } from "flowbite-react/lib/esm/components/Navbar/NavbarLink";
+import styles from "../styles/Nava.module.css";
 
 const Nava = () => {
   const { pathname } = useRouter();
@@ -18,7 +19,7 @@ const Nava = () => {
      
       style={{maxWidth: "1200px"}}
     >
-      <Navbar.Brand href="https://www.aca-mma.com/">
+      <Navbar.Brand href="/">
         <img
           src="/logo.svg"
           className="mr-3 h-6 sm:h-9"
@@ -40,7 +41,7 @@ const Nava = () => {
         
         <Navbar.Link 
         href="/marketplace"
-        className="text-lg font-bold text-white hover:text-red-600 mr-1 lg:text-xl"
+        className={styles.navatxt}
         >
            МАРКЕТПЛЕЙС
         </Navbar.Link>

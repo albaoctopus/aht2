@@ -24,14 +24,7 @@ function HeroHeavy(props) {
           <p className="mb-8 leading-relaxed">
           Кульминационные моменты кумиров.  Победные удары и приемы. Драма! Трагедия! Комедия! Эмоции! Вдохновение! Создай свою коллекцию! Создай свое наследие!
           </p>
-          <div className="flex justify-center">
-            <button className={`inline-flex text-white bg-${props.theme}-500 border-0 py-2 px-6 focus:outline-none hover:bg-${props.theme}-600 rounded text-lg`}>
-              Button
-            </button>
-            <button className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-              Button
-            </button>
-          </div>
+        
         </div>
         <div className="basis-1/2  lg:grow lg:w-full md:w-1/2 w-5/6">
           <video className="object-cover object-center rounded-3xl" alt="hero" src="/videoB.mp4" autoPlay loop muted />

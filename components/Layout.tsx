@@ -19,7 +19,7 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-       <Nava/>
+       <Navaflo/>
        
       <main>{children}</main>
      

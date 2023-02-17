@@ -49,19 +49,19 @@ import {
   
     // Loading state while we fetch the metadata
     if (!nftDrop || !contractMetadata) {
-      return <div className="bg-gray-200 p-6">Loading...</div>;
+      return <div className="bg-gray-900 p-6">Loading...</div>;
     }
     
     return (
-      <div className="bg-gray-900 p-6 grid grid-row-2 items-center">
-  <div className="py-3 border-4 border-green-100 object-cover object-center rounded-3xl">
-    <video src="/Vakhaev.mp4" autoPlay loop muted controls />
+      <div className="bg-gray-900 p-6 grid grid-row-3 items-center">
+  <div className="py-3 object-cover object-center h-91 w-full">
+    <video src="/Vakhaev.mp4" autoPlay loop muted controls className="rounded-3xl border-red-600 border-4 "/>
   </div>
 
-  <div className="p-5 border-4 border-blue-400 flex flex-row items-center justify-between">
+  <div className="p-5 border-4 border-red-600 rounded-3xl items-center justify-between">
     <div className=" flex flex-col text-left">
-      <p className="text-white text-base font-medium xl:text-lg">VAKHAEV</p>
-      <p className="text-white text-xs xl:text-sm">Price: 5.0 MATIC</p>
+      <p className="my-1 bg-red-800 text-white text-center text-lg font-extrabold rounded-3xl py-2 px-4 border-2 border-red-600 transition duration-200 ease-in-out hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Vakhaev</p>
+      <p className="my-1 bg-red-800 text-white text-center text-lg font-extrabold rounded-3xl py-2 px-4 border-2 border-red-600 transition duration-200 ease-in-out hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Price: 5.0 Matic</p>
     </div>
 
     {isSoldOut ? (
@@ -90,6 +90,8 @@ import {
         colorMode="light"
         
       >
+
+
         {`Mint${quantity > 1 ? ` ${quantity}` : ""}${
           activeClaimCondition?.price.eq(0)
             ? " (Free)"
@@ -100,6 +102,7 @@ import {
                   )} ${activeClaimCondition?.currencyMetadata.symbol})`
             : ""
         }`}
+        
       </Web3Button>
       
     )}

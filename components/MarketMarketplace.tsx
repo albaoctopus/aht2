@@ -44,7 +44,7 @@ const MarketMarketplace = () => {
 
 </div>
 
-      <div className="container mx-auto pt-10 justify-center flex flex-row flex-wrap">
+      <div className="bg-gray-900  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
     <Vagaev/>    
     <Suleymanov/>
     <Abdulvakhabov/>
@@ -71,7 +71,7 @@ const MarketMarketplace = () => {
 
 </div>
 
-  <div className="container mx-auto flex flex-row flex-wrap">
+  <div className="bg-gray-900  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
   <Vagaev/>    
     <Suleymanov/>
     <Abdulvakhabov/>
@@ -99,7 +99,7 @@ const MarketMarketplace = () => {
 
 </div>
     
-  <div className="container mx-auto flex flex-row flex-wrap">
+  <div className="bg-gray-900  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
     <Vagaev/>    
     <Suleymanov/>
     <Abdulvakhabov/>

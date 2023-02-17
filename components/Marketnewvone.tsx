@@ -11,13 +11,13 @@ import { Marketplace } from "@thirdweb-dev/sdk";
 import { BigNumber } from "ethers";
 
 
-const MpRelLheavy: NextPage = () => {
+const Marketnewvone: NextPage = () => {
   const router = useRouter();
 
 
   // Connect your marketplace smart contract here (replace this address)
   const { contract } = useContract(
-    "0x65796320b58756f7Fab525Ce47000712641708F9", // Your marketplace contract address here
+    "0x71200776E9C84AE5D491324640652870CE0E7e92", // Your marketplace contract address here
     "marketplace"
   );
 
@@ -76,4 +76,4 @@ return (
 );
   };
 
-export default MpRelLheavy;
+  export default Marketnewvone;

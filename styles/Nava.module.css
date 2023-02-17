@@ -1,0 +1,3 @@
+.navatxt {
+    @apply text-base font-bold text-white hover:text-red-600 mr-1 lg:text-xl !important;
+}

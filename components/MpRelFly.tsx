@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import styles from "../styles/Market.module.css";
+
 import Link from "next/link";
 import {
   MediaRenderer,
@@ -8,76 +8,72 @@ import {
 } from "@thirdweb-dev/react";
 import { useRouter } from "next/router";
 import { Marketplace } from "@thirdweb-dev/sdk";
+import { BigNumber } from "ethers";
+
 
 const MpRelFly: NextPage = () => {
   const router = useRouter();
 
 
   // Connect your marketplace smart contract here (replace this address)
-  const { contract: marketplace } = useContract(
-    "0xaadCAC3b21C5E47ba50aF18C18808ec6EeB32FaB", // Your marketplace contract address here
+  const { contract } = useContract(
+    "0xb6Da6Fa36B14106A6104DA5809bC4fcD975530EC", // Your marketplace contract address here
     "marketplace"
   );
 
-  const { data: listings, isLoading: loadingListings } =
-    useActiveListings(marketplace);
+  const { data: nfts, isLoading} =
+  useActiveListings(contract);
 
-  return (
-    <>
-      {/* Content */}
-      <div className={styles.container}>
-        
-
-        <div className="main">
-          {
-            // If the listings are loading, show a loading message
-            loadingListings ? (
-              <div>Loading listings...</div>
-            ) : (
-              // Otherwise, show the listings
-              <div className={styles.listingGrid}>
-                {listings?.map((listing) => (
-                  <div
-                    key={listing.id}
-                    className={styles.listingShortView}
-                    onClick={() => router.push(`/listing/${listing.id}`)}
-                  >
-                    <MediaRenderer className={styles.ybart}
-                      src={listing.asset.image}
-                      style={{
-                        borderRadius: 18,
-                        // Fit the image to the container
-                        width: "100%",
-                        height: "100%",
-                        
-                      }}
-                    />
-                    <h2>
-                      <Link href={`/listing/${listing.id}`}>
-                        <a className={styles.nftName}>{listing.asset.name}</a>
-                      </Link>
-                    </h2>
-
-                    <p className={styles.nftPrice}>
-                      <b>{"PRICE "}{listing.buyoutCurrencyValuePerToken.displayValue  }{" ETH  "}</b>
-                      
-                    </p>
-                    <div>
-                    <Link href="/create">
-                    <a className={styles.nftButton} >
-                     BUY NFT
-                     </a>
-                    </Link>
-                  </div>
-                  </div>
-                ))}
-              </div>
-            )
-          }
+return (
+<div>
+<main className="p-5">
+    
+    {!isLoading ? (
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {nfts && nfts.map((nft) => {
+                return (
+                    <div key={nft.id} className="bg-gray-900 rounded-3xl overflow-hidden shadow-lg ">
+                        <MediaRenderer
+                            src={nft.asset.image}
+                            height="260px"
+                            width="260px"
+                            className="w-full h-91 object-cover rounded-3xl border-4 border-red-600 my-5"
+                        />
+                        <div className="p-5 flex-col rounded-3xl border-4 border-red-600 flex  justify-between">
+                            <span>
+                            <p className="min-w-fit my-1 bg-red-800 text-white text-center text-lg font-extrabold rounded-3xl py-2 px-4 border-2 border-red-600 transition duration-200 ease-in-out hover:bg-opacity-75 focus:outline-none">{nft.asset.name}</p>
+                            <p className="my-1 bg-red-800 text-white text-center text-lg font-extrabold rounded-3xl py-2 px-4 border-2 border-red-600 transition duration-200 ease-in-out hover:bg-opacity-75 focus:outline-none">
+                                Price: {nft.buyoutCurrencyValuePerToken.displayValue} MATIC
+                            </p>
+                            </span>
+                            <button
+                                className="min-w-fit my-1 bg-red-800 text-white text-center text-lg font-extrabold rounded-3xl py-2 px-4 border-2 border-red-600 transition duration-200 ease-in-out hover:bg-opacity-75 focus:outline-none"
+                                onClick={async () => {
+                                    try {
+                                        await contract?.buyoutListing(
+                                            BigNumber.from(nft.id),
+                                            1
+                                        );
+                                    } catch (error) {
+                                        console.error(error);
+                                        alert(error);
+                                    }
+                                }}
+                            >
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                );
+            })}
         </div>
-      </div>
-    </>
-  );
-};
+    ) : (
+        <div className="text-center text-3xl">Loading...</div>
+    )}
+</main>
+
+</div>
+);
+  };
 
 export default MpRelFly;
