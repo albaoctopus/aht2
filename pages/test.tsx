@@ -10,6 +10,7 @@ import HeroMarketplace from "../components/HeroMarketplace";
 import HeroRone from "../components/HeroRone";
 import HeroRtwo from "../components/HeroRtwo";
 import Magazin from "../components/Magazin";
+import MarketMarketplace from "../components/MarketMarketplace";
 import Tlineone from "../components/Tlineone";
 import Tlinetwo from "../components/Tlinetwo";
 import Vport from "../components/Vport";
@@ -24,7 +25,7 @@ const Test: NextPage = () => {
         <div>
         
 
-        <HeroMarketplace/>
+        <MarketMarketplace/>
         
         
         </div>

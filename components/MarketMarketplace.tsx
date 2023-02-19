@@ -30,17 +30,15 @@ const MarketMarketplace = () => {
 >
   <Tabs.Item
     
-    title={<span className=" text-gray-500 text-xl font-bold md:text-lg">
-    ЗОЛОТЫЕ МОМЕНТЫ
+    title={<span className=" text-gray-500 text-sm font-bold md:text-xl">
+    ЗОЛОТЫЕ
   </span>}
   >
 
 <div className="mt-10 text-center text-7xl font-extrabold">
 
-<p className="mb-6 mt-9 text-xl font-bold text-white-500 lg:text-3xl sm:px-16 xl:px-48 dark:text-gray-400">Стань ближе к своему кумиру
-Мы Блокчейн платформа взаимодействия фанатов и бойцов.
-Новые технологии дают новые возможности. И теперь у Тебя есть возможность быть ближе к Кумиру. И влиять на развитие лиги.
-Сделаем Лучшую лигу в Мире Вместе.</p>
+<p className="mb-6 mt-9 text-xl font-bold text-white-500 lg:text-3xl sm:px-16 xl:px-48 dark:text-gray-400">Получите самые ЭПИЧНЫЕ моменты в истории ACA MMA с нашими Золотыми NFT! Эти NFT демонстрируют лучших из лучших Лиги!
+</p>
 
 </div>
 
@@ -58,16 +56,13 @@ const MarketMarketplace = () => {
   </Tabs.Item>
 
   
-  <Tabs.Item title={<span className=" text-gray-500 text-xl font-bold ">
-    СЕРЕБРЯННЫЕ МОМЕНТЫ
+  <Tabs.Item title={<span className=" text-gray-500 text-sm font-bold md:text-xl ">
+    СЕРЕБРЯННЫЕ
   </span>}>
 
   <div className="mt-10 text-center text-7xl font-extrabold">
 
-<p className="mb-6 mt-9 text-xl font-bold text-white-500 lg:text-3xl sm:px-16 xl:px-48 dark:text-gray-400">Стань ближе к своему кумиру
-Мы Блокчейн платформа взаимодействия фанатов и бойцов.
-Новые технологии дают новые возможности. И теперь у Тебя есть возможность быть ближе к Кумиру. И влиять на развитие лиги.
-Сделаем Лучшую лигу в Мире Вместе.</p>
+<p className="mb-6 mt-9 text-xl font-bold text-white-500 lg:text-3xl sm:px-16 xl:px-48 dark:text-gray-400">Испытайте весь драматизм боя с нашими серебряными NFT! Эти эксклюзивные NFT показывают напряженние решающих моментов боя!</p>
 
 </div>
 
@@ -86,16 +81,14 @@ const MarketMarketplace = () => {
 
 
   </Tabs.Item>
-  <Tabs.Item title={<span className=" text-gray-500 text-xl font-bold ">
-    БРОНЗОВЫЕ МОМЕНТЫ
+  <Tabs.Item title={<span className=" text-gray-500 text-sm font-bold md:text-xl ">
+    БРОНЗОВЫЕ
   </span>}>
 
   <div className="mt-10 text-center text-7xl font-extrabold">
 
-<p className="mb-6 mt-9 text-xl font-bold text-white-500 lg:text-3xl sm:px-16 xl:px-48 dark:text-gray-400">Стань ближе к своему кумиру
-Мы Блокчейн платформа взаимодействия фанатов и бойцов.
-Новые технологии дают новые возможности. И теперь у Тебя есть возможность быть ближе к Кумиру. И влиять на развитие лиги.
-Сделаем Лучшую лигу в Мире Вместе.</p>
+<p className="mb-6 mt-9 text-xl font-bold text-white-500 lg:text-3xl sm:px-16 xl:px-48 dark:text-gray-400">Не упустите шанс стать обладателем истории ACA MMA c нашими бронзовыми NFT! Это идеальный способ показать свою поддержку любимым спортсменам!
+</p>
 
 </div>
     
