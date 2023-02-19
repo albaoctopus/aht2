@@ -8,7 +8,7 @@ function HeroFly(props) {
   return (
     
     <section className="text-gray-200 bg-black-100 body-font">
-        <div className="mt-10 text-center text-7xl font-extrabold ...">
+        <div className="mt-10 text-center text-3xl font-extrabold sm:text-4xl md:text-5xl lg:text-7xl...">
   <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
     Чемпион в наилегчайшем весе
   </span> <br className="hidden lg:inline-block" />
@@ -39,7 +39,7 @@ function HeroFly(props) {
         </div>
    
       </div>
-      <div className="mt-10 text-center text-7xl font-extrabold ...">
+      <div className="mt-10 text-center text-4xl font-extrabold md:text-7xl ...">
   <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
     NFT ЧЕМПИОНА
   </span> <br className="hidden lg:inline-block" />
