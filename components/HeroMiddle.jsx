@@ -11,7 +11,7 @@ function HeroMiddle(props) {
         <div className="mt-10 text-center text-3xl font-extrabold sm:text-4xl md:text-5xl lg:text-7xl...">
   <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-600">
     Чемпион в среднем весе
-  </span> <br className="hidden lg:inline-block" />
+  </span> <br className="inline-block" />
   <span className="text-gray-200">
   МАГОМЕДРАСУЛ ГАСАНОВ
   </span>
