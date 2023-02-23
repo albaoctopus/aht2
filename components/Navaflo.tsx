@@ -25,13 +25,15 @@ const Navaflo = () => {
       className="mr-3 h-6 sm:h-9"
       alt="Flowbite Logo"
     />
-    <span className="self-center whitespace-nowrap text-base font-bold text-white hover:text-red-600 md:text-2xl lg:text-3xl">
+    <span className="self-center whitespace-nowrap text-base font-bold text-white hover:text-red-600 md:text-xl lg:text-xl">
       FIGHT
     </span>
   </Navbar.Brand>
   <div className="flex md:order-2">
     <div>
-      <ConnectWallet/>
+      <ConnectWallet
+      accentColor="#E41942"
+      />
 
     </div>
     <Navbar.Toggle />
@@ -56,28 +58,28 @@ const Navaflo = () => {
         >
          
           <Dropdown.Item>
-          <Link href="/heavy"> АЛИХАН ВАХАЕВ</Link>
+          <Link href="/heavy"> Алихан Вахаев</Link>
           </Dropdown.Item>
           <Dropdown.Item>
-          <Link href="/lheavy">МУСЛИМ МАГОМЕДОВ </Link>
+          <Link href="/lheavy">Муслим Магомедов </Link>
           </Dropdown.Item>
           <Dropdown.Item>
-          <Link href="/middle">МАГОМЕДРАСУЛ ГАСАНОВ</Link>
+          <Link href="/middle">Магомедрасул Гасанов</Link>
           </Dropdown.Item>
           <Dropdown.Item>
-          <Link href="/welter">АБУБАКАР ВАГАЕВ</Link>
+          <Link href="/welter">Абубакар Вагаев</Link>
           </Dropdown.Item>
           <Dropdown.Item>
-          <Link href="/light">АБДУЛ-АЗИЗ АБДУЛВАХАБОВ</Link>
+          <Link href="/light">Абдул-Азиз Абдулвахабов</Link>
           </Dropdown.Item>
           <Dropdown.Item>
-          <Link href="/feather">АЛИХАН СУЛЕЙМАНОВ</Link>
+          <Link href="/feather">Алихан Сулейманов</Link>
           </Dropdown.Item>
           <Dropdown.Item>
-          <Link href="/bantam">ОЛЕГ БОРИСОВ</Link>
+          <Link href="/bantam">Олег Борисов</Link>
           </Dropdown.Item>
           <Dropdown.Item>
-          <Link href="/fly">ИМРАН БУКУЕВ</Link>
+          <Link href="/fly">Имран Букуев</Link>
           </Dropdown.Item>
            
           </Dropdown>

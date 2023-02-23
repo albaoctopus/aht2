@@ -13,17 +13,17 @@ function Feather(props) {
     Чемпион в полулегком весе
   </span> <br className="inline-block" />
   <span className="text-gray-200">
-  АЛИХАН СУЛЕЙМАНОВ
+  
   </span>
 </div>
       <div className="container  mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:w-1/2 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Лучшие моменты боев<br className="hidden lg:inline-block" />
+            Алихан Сулейманов<br className="hidden lg:inline-block" />
             
           </h1>
           <p className="mb-8 leading-relaxed">
-          Кульминационные моменты кумиров.  Победные удары и приемы. Драма! Трагедия! Комедия! Эмоции! Вдохновение! Создай свою коллекцию! Создай свое наследие!
+          Российский боец смешанных единоборств чеченского происхождения, представитель полулёгкой весовой категории. Выступает на профессиональном уровне с 2014 года, известен по участию в турнирах престижных бойцовских организаций ACA, ACB. Чемпион ACA.
           </p>
           
         </div>

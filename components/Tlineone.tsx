@@ -14,7 +14,7 @@ export const Tlineone = () => (
 				<div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
 					<span className="text-xs tracking-wider uppercase dark:dark:text-violet-400">Step 1</span>
 					<span className="text-xl font-bold md:text-2xl">Дополнительый функционал Маркетплейса</span>
-					<span className="mt-4 dark:dark:text-gray-300">Запуск всех функций маркетплейса. Возможность продавать собственные NFT/</span>
+					<span className="mt-4 dark:dark:text-gray-300">Запуск всех функций маркетплейса. Возможность продавать собственные NFT</span>
 				</div>
 			</div>
 			<div className="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">

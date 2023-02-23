@@ -17,7 +17,7 @@ const MpRelBantam: NextPage = () => {
 
   // Connect your marketplace smart contract here (replace this address)
   const { contract } = useContract(
-    "0xEBE3B2b26113262D6230dd7691CEb447917cd979", // Your marketplace contract address here
+    "0x94b143730A6b41D151d61C6E6B2e93266499922E", // Your marketplace contract address here
     "marketplace"
   );
 

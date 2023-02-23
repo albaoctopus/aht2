@@ -15,8 +15,8 @@ function HeroRtwo(props) {
           </p>
          
         </div>
-        <div className="basis-1/2  lg:grow lg:w-full md:w-1/2 w-5/6">
-          <video className="object-cover object-center rounded-3xl" alt="hero" src="/Suleymanov.mp4" autoPlay loop muted />
+        <div className="w-full md:w-1/2 lg:w-1/2  lg:grow">
+          <img className="object-cover object-center rounded-3xl" alt="hero" src="/ava.gif" />
         </div>
       </div>
     </section>

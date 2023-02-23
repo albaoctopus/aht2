@@ -17,7 +17,7 @@ const MpRelHeavy: NextPage = () => {
 
   // Connect your marketplace smart contract here (replace this address)
   const { contract } = useContract(
-    "0x71200776E9C84AE5D491324640652870CE0E7e92", // Your marketplace contract address here
+    "0x94b143730A6b41D151d61C6E6B2e93266499922E", // Your marketplace contract address here
     "marketplace"
   );
 
